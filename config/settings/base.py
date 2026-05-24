@@ -33,6 +33,7 @@ ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=[])
 # Application definition
 
 INSTALLED_APPS = [
+    "tutorial",
     "rest_framework",
     "api",
     "django.contrib.admin",
