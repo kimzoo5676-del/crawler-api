@@ -1,6 +1,6 @@
 # Day 2 - DRF Serializer & View (2026-05-27)
 
-> 자세한 정리: [Velog 포스트]()
+> 자세한 정리: [Velog 포스트](https://velog.io/@zooouu/%EB%B0%B0%ED%8F%AC-%ED%95%99%EC%8A%B5%EC%9A%A9-%ED%86%A0%EC%9D%B4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-DAY-2)
 
 ## 오늘 한 것
 - tutorial 앱 생성, Snippet 모델 + 마이그레이션
