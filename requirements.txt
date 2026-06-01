@@ -4,6 +4,7 @@ certifi==2026.5.20
 charset-normalizer==3.4.7
 Django==5.2.14
 django-environ==0.13.0
+django-filter==25.2
 djangorestframework==3.17.1
 idna==3.17
 Pygments==2.20.0
