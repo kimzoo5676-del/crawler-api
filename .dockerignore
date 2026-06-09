@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Django
+db.sqlite3
+*.log
+staticfiles/
+
+# Secrets / 환경
+.env
+.env.*
+
+# VCS / 메타
+.git/
+.gitignore
+.github/
+
+# 문서·튜토리얼 (이미지에 불필요)
+docs/
+tutorial/
+README.md
+
+# OS
+.DS_Store
