@@ -18,5 +18,9 @@ COPY . .
 # 6) 포트 문서화
 EXPOSE 8000
 
-# 7) 컨테이너 시작 명령
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "config.wsgi:application"]
+# 7) 시작 스크립트 복사 + 실행 권한
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# 8) 컨테이너 시작 명령
+CMD ["/entrypoint.sh"]
