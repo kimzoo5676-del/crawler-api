@@ -21,13 +21,25 @@ services:
       - .env
     environment:
       - DJANGO_SETTINGS_MODULE=config.settings.prod
-
-    ports:
-      - "8000:8000"
+    volumes:
+      - static_data:/app/staticfiles
+    expose:
+      - "8000"
     depends_on:
       db:
         condition: service_healthy
 
+  # -- Nginx(문지기) 컨테이너 -------------------
+  nginx:
+    build: ./nginx
+    volumes:
+      - static_data:/app/staticfiles
+    ports:
+      - "80:80"
+    depends_on:
+      - web
+
 # -- named voluem 선언 -----------------------
 volumes:
   postgres_data:
+  static_data:
